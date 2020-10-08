@@ -9,7 +9,7 @@ public class FindLoopTest {
 
     @Test
     public void whenArrayHas5Then0() {
-        int input[] = {5, 4, 3, 2};
+        int[] input = {5, 4, 3, 2};
         int value = 5;
         int result = FindLoop.indexOf(input, value);
         int expect = 0;
@@ -18,20 +18,22 @@ public class FindLoopTest {
 
     @Test
     public void whenArrayHasNo5ThenMinus1() {
-        int input[] = {7, 4, 3, 2};
+        int[] input = {7, 4, 3, 2};
         int value = 5;
         int result = FindLoop.indexOf(input, value);
         int expect = -1;
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenArrayHas5LastSimbolThen3() {
-        int input[] = {7, 4, 3, 5};
+        int[] input = {7, 4, 3, 5};
         int value = 5;
         int result = FindLoop.indexOf(input, value);
         int expect = 3;
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenFind3() {
         int[] input = new int[]{5, 2, 10, 2, 4};
@@ -42,6 +44,7 @@ public class FindLoopTest {
         int expect = 3;
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenArrayHas6LastDiaposonSimbolThen3() {
         int[] input = new int[]{5, 2, 6, 2, 4};
@@ -52,6 +55,7 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenArrayHas6FirstDiaposonSimbolThen3() {
         int[] input = new int[]{5, 2, 6, 2, 4};
@@ -62,6 +66,7 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenArrayHasNoDiaposonSimbolThenMinus1() {
         int[] input = new int[]{5, 2, 6, 2, 4};

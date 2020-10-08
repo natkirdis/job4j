@@ -13,6 +13,7 @@ public class SortSelectedTest {
         int[] expect = new int[]{1, 2, 3, 4, 5};
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenSortWithNegativeNumbers() {
         int[] input = new int[]{-3, -4, -1, -2, -5};
@@ -20,6 +21,7 @@ public class SortSelectedTest {
         int[] expect = new int[]{-5, -4, -3, -2, -1};
         assertThat(result, is(expect));
     }
+
     @Test
     public void whenSimilarNumbers() {
         int[] input = new int[]{6, 6, 0, 2, 5};
@@ -27,6 +29,7 @@ public class SortSelectedTest {
         int[] expect = new int[]{0, 2, 5, 6, 6};
         assertThat(result, is(expect));
     }
+
     @Test
     public void when3Numbers() {
         int[] input = new int[]{1, 2, 3};
