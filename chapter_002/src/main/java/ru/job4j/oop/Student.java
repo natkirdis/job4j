@@ -6,18 +6,14 @@ public class Student {
         System.out.println("Tra tra tra");
     }
 
-    public void song() {
-        System.out.println("I believe I can fly");
+    public void music(String lyrics) {
+        System.out.println("I can sing a song: " + lyrics);
     }
 
     public static void main(String[] args) {
         Student petya = new Student();
+        String song = "I believe, I can fly";
 
-        for (int i = 0; i < 3; i++) {
-            petya.music();
-        }
-        for (int i = 0; i < 3; i++) {
-            petya.song();
-        }
+       petya.music(song);
     }
 }
