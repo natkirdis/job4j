@@ -14,7 +14,6 @@ public class TriangleTest {
         Point c = new Point(0, 4);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
-        System.out.println(rsl);
         assertThat(rsl, closeTo(8, 0.001));
     }
 }
