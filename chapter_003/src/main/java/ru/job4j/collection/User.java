@@ -13,14 +13,13 @@ public class User implements Comparable<User> {
 
     @Override
     public int compareTo(User o) {
-        if (this.name.compareTo(o.name) != 0) {
-            return this.name.compareTo(o.name);
-        } else {
-            return this.age - o.age;
+        int nameComp = this.name.compareTo(o.name);
+        if (nameComp != 0) {
+            return nameComp;
         }
+        return Integer.compare(this.age, o.age);
     }
 
-    @SuppressWarnings("checkstyle:NeedBraces")
     @Override
     public boolean equals(Object o) {
         if (this == o) {
