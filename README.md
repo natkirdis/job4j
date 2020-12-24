@@ -1,6 +1,4 @@
 # прохождение курса job4j
 # Кирдис Наталья
 
-В курсе производилась работа с веткамы git
-Объединение зафиксированных изменений
-Создание ветки из IDEA
+[![Build Status](https://travis-ci.org/natkirdis/job4j.svg?branch=master)](https://travis-ci.org/natkirdis/job4j)
