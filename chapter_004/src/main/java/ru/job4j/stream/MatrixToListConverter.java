@@ -10,9 +10,6 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class MatrixToListConverter {
-
-   int[][] matrix = {{1, 2}, {3, 4}};
-
         public List<Integer> convertMatrixToList(Integer[][] matrix) {
             return Arrays.stream(matrix)
                     .flatMap(Arrays::stream)
